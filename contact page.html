@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Jack Jetson</title>
+    <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jack Jetson Classic Car Restorations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Restoration Portfolio.html">Restoration Portfolio</a></li>
+                <li><a href="Restoration Advice.html">Restoration Advice</a></li>
+                <li><a href="contact page.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Jack Jetson</h2>
+            <p>If you are considering embarking on a classic car restoration project or are in need of a professional re-spray to restore your vehicle’s original beauty, we kindly invite you to fill out the form below. Once submitted, Jack will review your request and get in touch with you promptly to discuss your needs, offer expert advice, and guide you through the next steps in bringing your vision to life.</p>
+            
+            <form action="contact page.html" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Adam" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="abcd138@gmail.com" required>
+            
+                <label for="phone">Phone Number:</label>
+                <!-- Updated pattern to correctly match phone number format with spaces -->
+                <input type="tel" id="phone" name="phone" placeholder="020 1234 5678" 
+                       pattern="^\d{3}\s?\d{4}\s?\d{4}$" required 
+                       title="Phone number must be in the format: 020 1234 5678 (spaces are optional)">
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message here" required></textarea>
+            
+                <button type="submit">Submit</button>
+            </form>
+            
+            <div class="location-box">
+                <h3>Location</h3>
+                <p>Jack's Workshop<br>123 Classic Car Lane<br>Car City, CC 12345</p>
+                <p>Email: info@jackjetsonrestorations.com<br>Phone: (555) 123-4567</p>
+            </div>
+        </section>
+    </main>
+    
+    <br> 
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/p/Classic-Car-Restoration-100054601562872/?locale=en_GB" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook"   style="width: 30px;">
+                </a>
+                <a href="https://www.twitter.com/knwautorepairs" target="_blank">
+                    <img src="https://cdn-icons-png.freepik.com/256/2496/2496110.png?semt=ais_hybrid" alt="Twitter"    style="width: 30px;">
+                </a>
+            </div>
+            <p>&copy; 2024 Jack Jetson Classic Car Restorations | All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
